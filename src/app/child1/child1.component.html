@@ -1,0 +1,5 @@
+<p>child1 works!</p>
+<h3>{{data}}</h3>
+<app-g1child1 [dataPassedAsInput]="data" (outputData)="dataReceivedFromGChild1($event)" />
+<app-g1child2 [dataPassedAsInput]="data" (outputData)="dataReceivedFromGChild2($event)" />
+<button (click)="output()">Send data to Parent</button>

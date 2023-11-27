@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { ChildComponent } from "./child/child.component";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
@@ -16,11 +16,11 @@ import { DatePipe } from '@angular/common';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [CommonModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe, RouterOutlet, ChildComponent, HttpClientModule]
+  imports: [CommonModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe, RouterOutlet, ChildComponent, HttpClientModule, RouterModule]
 })
 export class AppComponent implements AfterViewInit {
-  title = 'first';
-  name = 'test';
+  title = 'Safaryaara';
+  name = 'Safaryaara';
   show = false;
 
   displayedColumns: string[] = ['created', 'state', 'number', 'title'];
