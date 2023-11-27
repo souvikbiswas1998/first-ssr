@@ -1,9 +1,9 @@
 import { mergeApplicationConfig, ApplicationConfig } from '@angular/core';
 import { provideServerRendering } from '@angular/platform-server';
 import { appConfig } from './app.config';
-import { HttpHandlerFn, HttpInterceptorFn, HttpRequest, provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
-import { MyHttpInterceptor, myintercept } from './http.interceptor';
-import { withDebugTracing } from '@angular/router';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+// import { MyHttpInterceptor, myintercept } from './http.interceptor';
+// import { withDebugTracing } from '@angular/router';
 
 const serverConfig: ApplicationConfig = {
   providers: [
