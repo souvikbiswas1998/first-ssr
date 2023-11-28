@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { ChildComponent } from "./child/child.component";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
@@ -16,7 +15,7 @@ import { DatePipe } from '@angular/common';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [CommonModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe, RouterOutlet, ChildComponent, HttpClientModule, RouterModule]
+  imports: [CommonModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe, RouterOutlet, HttpClientModule, RouterModule]
 })
 export class AppComponent implements AfterViewInit {
   title = 'Safaryaara';
